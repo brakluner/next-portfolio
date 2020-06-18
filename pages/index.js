@@ -1,3 +1,5 @@
-const Index = () => <div>home <a href="/about">About</a></div>;
+import Link from "next/link"
+
+const Index = () => <div>home <Link href="/about">About</Link></div>;
 
 export default Index;
