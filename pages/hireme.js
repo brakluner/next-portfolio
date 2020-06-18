@@ -1,7 +1,8 @@
 import Link from "next/link"
+import Layout from "../components/Layout"
 
 const HireMe = () => (
-    <div>
+    <Layout>
         <Link href="/">Home</Link>
         <Link href="/about">About</Link>
         <h1>Hire Me To Do Your Web Bidding!</h1>
@@ -9,7 +10,7 @@ const HireMe = () => (
             <a
             href="mailto:tedblount01@gmail.com">TedBlount01@GMAIL.COM</a>
         </p>
-    </div>
+    </Layout>
 )
 
 export default HireMe
