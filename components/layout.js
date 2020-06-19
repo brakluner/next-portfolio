@@ -32,6 +32,10 @@ export default ({ children, title }) => (
             margin: auto;
             color: #00ff92;
         }
+        a:hover {
+            font-weight: bold;
+            color: #00ffc8;
+        }
         `}
 
         </style>
