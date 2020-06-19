@@ -12,6 +12,6 @@ export default ({ children, title }) => (
         <h1>{title}</h1>
         {children}
 
-        <footer>est 2019</footer>
+        <footer>&copy; {new Date().getFullYear()}</footer>
     </div>
 )
