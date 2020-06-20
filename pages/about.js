@@ -1,10 +1,14 @@
 import Layout from "../components/Layout";
+import { Component } from 'react';
 
-export default () => (
-
-<Layout title="About">
-    <p>Web Dev Team</p>
-    <img src="/static/mustache.jpg" alt="mustache"/>
-</Layout>
-);
+export default class About extends Component {
+    render() {
+        return (
+            <Layout>
+                <img src="/static/mustache.jpg" alt="mustache"/>
+            </Layout>
+        )
+    }
+}
+    
 

@@ -13,11 +13,11 @@ Router.onRouteChangeError = () => NProgress.done();
 
 
 export default ({ children, title }) => (
-    <div>
+    <div className="root">
         <Head>
             <title>Ted Web World</title>
          </Head>
-        <header className="root">
+        <header>
             <Link href="/"><a>Home</a></Link>
             <Link href="/about"><a>About</a></Link>
             <Link href="/hireme"><a>Hire Me</a></Link>
@@ -30,9 +30,9 @@ export default ({ children, title }) => (
         <style jsx>{`
         .root {
             display: flex;
-            justify-content: left;
-            align-items: left;
-            flex-direction: right;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
         header {
             width: 100%;
