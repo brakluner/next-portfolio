@@ -1,8 +1,24 @@
 import Link from 'next/link';
+import Head from "next/head";
+import Router from "next/router";
+import NProgress from 'nprogress';
+
+Router.onRouteChangeStart = url => {
+    console.log(url);
+    NProgress.start();
+}
+
+Router.onRouteChangeComplete = () => NProgress.done();
+Router.onRouteChangeError = () => NProgress.done();
 
 
 export default ({ children, title }) => (
     <div>
+        <Head>
+            <title>Ted Web World</title>
+            <link rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css"/>
+        </Head>
         <header className="root">
             <Link href="/"><a>Home</a></Link>
             <Link href="/about"><a>About</a></Link>
