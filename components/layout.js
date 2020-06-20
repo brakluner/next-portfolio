@@ -16,9 +16,7 @@ export default ({ children, title }) => (
     <div>
         <Head>
             <title>Ted Web World</title>
-            <link rel="stylesheet" 
-            href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css"/>
-        </Head>
+         </Head>
         <header className="root">
             <Link href="/"><a>Home</a></Link>
             <Link href="/about"><a>About</a></Link>
