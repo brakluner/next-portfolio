@@ -1,4 +1,4 @@
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 
 const Post = ({ url }) => (
     <Layout title={url.query.title}>
